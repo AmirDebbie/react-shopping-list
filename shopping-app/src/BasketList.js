@@ -12,9 +12,9 @@ function BasketList(props) {
     }
     return (
         <div>
-            <h2>Basket <button className='dlt-btn' style={{marginLeft: 50}} onClick={() => {props.deleteAll()}}>Delete All</button></h2>
+            <h2>Basket <button className='dlt-btn'  onClick={() => {props.deleteAll()}}>Delete All</button></h2>
             {isBasketEmpty() ? 
-            <p>Your basket is empty!</p> :
+            <h3>Your basket is empty!</h3> :
             <ul>
                 {props.list.filter(item => {
                     return item.amount > 0;

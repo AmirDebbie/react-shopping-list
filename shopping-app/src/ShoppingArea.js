@@ -153,7 +153,7 @@ function ShoppingArea() {
         setItemList(cloneItemList);
     }
     return (
-        <div  style={{margin: 30, textAlign: 'center'}}>
+        <div style={{margin: 30, textAlign: 'center'}}>
             <SearchBar search={search} list={itemList} />
             <div className='container'>
                 <GroceriesList addAmount={addAmount} list={itemList} />

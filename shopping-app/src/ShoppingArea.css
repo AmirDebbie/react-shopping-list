@@ -1,17 +1,23 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+ul {
+    padding: 0;
 }
 
 li {
     font-size: 18px;
     list-style: none;
-    margin: 0;
     padding: 0;
     background: #eee;
     cursor: pointer;
-    height: 35px;
+    height: 30px;
     margin: 5px;
+    transition: 200ms;
+    text-align: center;
 }
 li:nth-child(odd) {
     background: #f9f9f9;
@@ -51,6 +57,7 @@ button:focus {
 }
 
 .dlt-btn {
+    margin-left: 100px !important;
     background-color: red;
     width: 80px;
     height: 30px;
