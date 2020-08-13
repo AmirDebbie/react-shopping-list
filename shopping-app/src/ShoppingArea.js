@@ -144,7 +144,7 @@ function ShoppingArea() {
     const search = (e) => {
         let cloneItemList = itemList.slice();
         cloneItemList.forEach(item => {
-            if (item.name.indexOf(e.target.value) === -1) {
+            if (item.name.toLowerCase().indexOf(e.target.value.toLowerCase()) === -1) {
                 item.show = false;
             } else {
                 item.show = true;

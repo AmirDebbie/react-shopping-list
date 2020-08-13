@@ -4,11 +4,14 @@
 }
 
 li {
+    font-size: 18px;
     list-style: none;
     margin: 0;
     padding: 0;
     background: #eee;
     cursor: pointer;
+    height: 35px;
+    margin: 5px;
 }
 li:nth-child(odd) {
     background: #f9f9f9;
@@ -24,13 +27,14 @@ li:nth-child(odd) {
     color: white;
 }
 input {
-    width: 200px;
+    width: 300px;
     background-color: rgb(230, 230, 230);
     padding: 8px;
     border: grey solid 2px;
     border-radius: 8px;
     color: rgb(62, 87, 76);
     text-align: center;
+    font-size: 18px;
     font-family: Trebuchet MS, sans-serif;
     transition: 200ms;
   }
