@@ -2,8 +2,8 @@ import React from 'react';
 
 function Header() {
     return (
-        <div style={{backgroundColor: '#333', height: 200}}>
-            <h1 style={{color: 'white', textAlign: 'center', paddingTop:150 }}>Hello Basket!</h1>
+        <div style={{backgroundColor: '#333', height: 150}}>
+            <h1 style={{margin: 0, color: 'white', paddingTop: 100, textAlign: 'center'}}>Hello, Basket</h1>
         </div>
     )
     

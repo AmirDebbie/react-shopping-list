@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    cursor: pointer;
+}
+li:nth-child(odd) {
+    background: #f9f9f9;
+}
+.remove:hover {
+    background: #aa3d3d;
+    font-weight: bold;
+    color: white;
+}
+.add:hover {
+    background: #248834;
+    font-weight: bold;
+    color: white;
+}
+input {
+    width: 200px;
+    background-color: rgb(230, 230, 230);
+    padding: 8px;
+    border: grey solid 2px;
+    border-radius: 8px;
+    color: rgb(62, 87, 76);
+    text-align: center;
+    font-family: Trebuchet MS, sans-serif;
+    transition: 200ms;
+  }
+  
+  input:hover {
+    outline: none;
+    border-color: rgb(85, 88, 87);
+    transform: scale(1.02);
+  }
+
+input:focus,
+button:focus {
+  outline: none;
+}
