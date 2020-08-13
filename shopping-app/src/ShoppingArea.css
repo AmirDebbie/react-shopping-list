@@ -45,3 +45,23 @@ input:focus,
 button:focus {
   outline: none;
 }
+
+.dlt-btn {
+    background-color: red;
+    width: 80px;
+    height: 30px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border: red solid 2px;
+    border-radius: 6px;
+    margin: 10px;
+    transition: 200ms;
+  }
+  
+  .dlt-btn:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    background-color: white;
+    color: red;
+  }
