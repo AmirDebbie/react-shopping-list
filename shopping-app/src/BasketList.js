@@ -1,6 +1,8 @@
 import React from 'react';
 
 function BasketList(props) {
+
+    // Checks if any item in the itemList had an amount above 0.
     const isBasketEmpty = () => {
         let result = true;
         props.list.forEach(item => {
@@ -10,6 +12,7 @@ function BasketList(props) {
         });
         return result;
     }
+    
     return (
         <div>
             <h2>Basket <button className='dlt-btn'  onClick={() => {props.deleteAll()}}>Delete All</button></h2>
@@ -28,8 +31,7 @@ function BasketList(props) {
             </ul>
             }
         </div>
-    )
-    
+    ) 
 }
 
 export default BasketList;

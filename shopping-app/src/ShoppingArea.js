@@ -116,7 +116,9 @@ function ShoppingArea() {
         },
     ]);
 
+    // takes an item and adds 1 to his amount
     const addAmount = (itemName) => {
+        debugger
         let cloneItemList = itemList.slice();
         cloneItemList.forEach(item => {
             if (item.name === itemName) {
@@ -126,12 +128,14 @@ function ShoppingArea() {
         setItemList(cloneItemList);
     }
 
+    // Reset amount of all items in list (also deletes them from basket).
     const deleteAll = () => {
         let cloneItemList = itemList.slice();
         cloneItemList.forEach(item => {item.amount = 0;})
         setItemList(cloneItemList);
     }
 
+    // Takes an item and changes its 'isChecked' status. 
     const changeChecked = (itemName) => {
         let cloneItemList = itemList.slice();
         cloneItemList.forEach(item => {
@@ -141,10 +145,12 @@ function ShoppingArea() {
         });
         setItemList(cloneItemList);
     }
-    const search = (e) => {
+
+    // Takes a value and search's it in the itemList.
+    const search = (searchValue) => {
         let cloneItemList = itemList.slice();
         cloneItemList.forEach(item => {
-            if (item.name.toLowerCase().indexOf(e.target.value.toLowerCase()) === -1) {
+            if (item.name.toLowerCase().indexOf(searchValue) === -1) {
                 item.show = false;
             } else {
                 item.show = true;
