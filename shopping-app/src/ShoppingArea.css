@@ -47,7 +47,7 @@ input {
   
   input:hover {
     outline: none;
-    border-color: rgb(85, 88, 87);
+    border-color: #222;
     transform: scale(1.02);
   }
 

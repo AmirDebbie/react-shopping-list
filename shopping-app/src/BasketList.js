@@ -24,9 +24,9 @@ function BasketList(props) {
                     return item.amount > 0;
                 }).map((item, i) => {
                     if (item.isChecked) {
-                        return <li className='add' key={i} style={{textDecoration: "line-through"}} onClick={() => {props.changeChecked(item.name)}}>{item.name} {item.amount}</li>
+                        return <li className='add' key={i} style={{textDecoration: "line-through"}} onClick={() => {props.changeChecked(item.name)}}>{item.amount} {item.name}</li>
                     } else {
-                        return <li className='remove' key={i} onClick={() => {props.changeChecked(item.name)}}>{item.name} {item.amount}</li>
+                        return <li className='remove' key={i} onClick={() => {props.changeChecked(item.name)}}>{item.amount} {item.name}</li>
                     }
                 })}
             </ul>
