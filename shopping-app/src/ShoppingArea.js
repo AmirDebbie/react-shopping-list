@@ -118,7 +118,6 @@ function ShoppingArea() {
 
     // takes an item and adds 1 to his amount
     const addAmount = (itemName) => {
-        debugger
         let cloneItemList = itemList.slice();
         cloneItemList.forEach(item => {
             if (item.name === itemName) {
@@ -131,7 +130,10 @@ function ShoppingArea() {
     // Reset amount of all items in list (also deletes them from basket).
     const deleteAll = () => {
         let cloneItemList = itemList.slice();
-        cloneItemList.forEach(item => {item.amount = 0;})
+        cloneItemList.forEach(item => {
+            item.amount = 0;
+            item.isChecked = false;
+        })
         setItemList(cloneItemList);
     }
 

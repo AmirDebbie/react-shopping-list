@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function GroceriesList(props) {
     return (
@@ -13,7 +14,11 @@ function GroceriesList(props) {
             </ul>
         </div>
     )
-    
+}
+
+GroceriesList.propTypes = {
+    addAmount: PropTypes.func.isRequired,
+    list: PropTypes.array.isRequired
 }
 
 export default GroceriesList;

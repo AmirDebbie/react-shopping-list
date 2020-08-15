@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function BasketList(props) {
 
@@ -32,6 +33,12 @@ function BasketList(props) {
             }
         </div>
     ) 
+}
+
+BasketList.propTypes = {
+    changeChecked: PropTypes.func.isRequired,
+    deleteAll: PropTypes.func.isRequired,
+    list: PropTypes.array.isRequired
 }
 
 export default BasketList;
